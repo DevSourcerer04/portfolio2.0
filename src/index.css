@@ -47,6 +47,20 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes glow-flash {
+    0%, 100% {
+      text-shadow: none;
+    }
+    50% {
+      text-shadow: 0 0 24px var(--flash-color), 0 0 48px var(--flash-color), 0 0 72px var(--flash-color);
+    }
+  }
+
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
   @keyframes meteor {
     0% {
       transform: rotate(215deg) translateX(0);
@@ -146,12 +160,46 @@
 
 @utility star {
   @apply absolute rounded-full bg-white;
+  background: #fff;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+  background: linear-gradient(to right, #fff, #fff, transparent);
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+:root:not(.dark) .star {
+  background: #222; /* dark color for visibility in light mode */
+  box-shadow: 0 0 10px 2px rgba(34, 34, 34, 0.2);
+}
+
+:root:not(.dark) .meteor {
+  background: linear-gradient(to right, #222, #222, transparent);
+  box-shadow: 0 0 10px 5px rgba(34, 34, 34, 0.15);
+}
+
+:root #portfolio-heading {
+  /* Use a dark gradient and strong shadow for light mode */
+  background: linear-gradient(90deg, #22223b, #3a3a5a, #1a1a2e);
+  background-size: 200% 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: none;
+  text-shadow: 0 0 24px #1deff6, 0 0 48px #1deff6, 0 0 72px #1deff6;
+}
+
+:root:not(.dark) #portfolio-heading {
+  /* Use a dark gradient and strong shadow for light mode */
+  background: linear-gradient(90deg, #22223b, #3a3a5a, #1a1a2e);
+  background-size: 200% 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: none;
+  text-shadow: 0 0 24px #0000ff, 0 0 48px #0000ff, 0 0 72px #0000ff;
 }
 
 #root {
