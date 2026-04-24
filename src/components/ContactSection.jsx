@@ -73,7 +73,7 @@ export const ContactSection = () => {
                     href="tel: +91 879 XYZ ABCD"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +91 879 XYZ ABCD
+                    +91 879 000 5748
                   </a>
                 </div>
               </div>
