@@ -8,20 +8,13 @@ export const HeroSection = () => {
     >
       <div className="container max-w-6xl mx-auto z-10">
         <div className="flex flex-col items-center gap-10 text-center lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:text-left">
-          <div className="coin-flip-shell flex justify-center lg:justify-start shrink-0">
-            <div className="coin-flip-enter relative h-72 w-56 md:h-80 md:w-64 lg:h-[26rem] lg:w-[20rem] rounded-[50%/38%] overflow-hidden border-4 border-primary/70 bg-card/30 shadow-[0_0_35px_rgba(139,92,246,0.28)]">
-              <div className="coin-face coin-face-front absolute inset-[4px] rounded-[50%/38%] overflow-hidden bg-background">
+          <div className="flex justify-center lg:justify-start shrink-0">
+            <div className="relative h-72 w-56 md:h-80 md:w-64 lg:h-[26rem] lg:w-[20rem] rounded-[50%/38%] overflow-hidden border-4 border-primary/70 bg-card/30 shadow-[0_0_35px_rgba(139,92,246,0.28)]">
+              <div className="absolute inset-[4px] rounded-[50%/38%] overflow-hidden bg-background">
                 <img
                   src="/profile-photo.jpg"
                   alt="Portrait of Abhishek Gupta"
                   className="h-full w-full scale-[1.16] object-cover object-[center_18%]"
-                />
-              </div>
-              <div className="coin-face coin-face-back absolute inset-[4px] rounded-[50%/38%] overflow-hidden">
-                <img
-                  src="/profile-coin.png"
-                  alt="Coin version of Abhishek Gupta portrait"
-                  className="h-full w-full object-cover"
                 />
               </div>
             </div>
