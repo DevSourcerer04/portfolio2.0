@@ -6,42 +6,44 @@ export const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
-      <div className="container max-w-4xl mx-auto text-center z-10">
-        <div className="space-y-6">
-          <div className="opacity-0 animate-fade-in-delay-1 flex justify-center">
-            <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-[999px] p-[3px] bg-linear-to-b from-primary/80 via-white/30 to-primary/50 shadow-[0_0_30px_rgba(139,92,246,0.2)]">
-              <div className="h-full w-full rounded-[999px] border border-white/10 bg-card/40 backdrop-blur-sm overflow-hidden">
+      <div className="container max-w-6xl mx-auto z-10">
+        <div className="flex flex-col items-center gap-10 text-center lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:text-left">
+          <div className="opacity-0 animate-fade-in-delay-1 flex justify-center lg:justify-start shrink-0">
+            <div className="relative h-72 w-56 md:h-80 md:w-64 lg:h-[26rem] lg:w-[20rem] rounded-[50%/38%] overflow-hidden border-4 border-primary/70 bg-card/30 shadow-[0_0_35px_rgba(139,92,246,0.28)]">
+              <div className="absolute inset-[8px] rounded-[50%/38%] overflow-hidden border border-white/20 bg-card/20">
                 <img
                   src="/profile-photo.jpg"
                   alt="Portrait of Abhishek Gupta"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-center"
                 />
               </div>
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
+          <div className="space-y-6 max-w-3xl lg:flex-1">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+              <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
+              <span className="text-primary opacity-0 animate-fade-in-delay-1">
               {" "}
               Abhishek
-            </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
+              </span>
+              <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
               Gupta
-            </span>
-          </h1>
+              </span>
+            </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I'm a frontend developer and ML enthusiast who crafts responsive, accessible, and high-performance web applications 
-            using modern tools like Tailwind CSS, React, and Vite. I also build intelligent systems by integrating machine learning models 
-            into real-world applications using FastAPI, MLflow, and DVC. From beautiful interfaces to AI-driven insights — I build with purpose, precision, and a passion for innovation.
-          </p>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 opacity-0 animate-fade-in-delay-3">
+              I'm a frontend developer and ML enthusiast who crafts responsive, accessible, and high-performance web applications
+              using modern tools like Tailwind CSS, React, and Vite. I also build intelligent systems by integrating machine learning models
+              into real-world applications using FastAPI, MLflow, and DVC. From beautiful interfaces to AI-driven insights — I build with purpose, precision, and a passion for innovation.
+            </p>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
-              View My Work
-            </a>
+            <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+              <a href="#projects" className="cosmic-button inline-flex">
+                View My Work
+              </a>
+            </div>
           </div>
         </div>
       </div>
