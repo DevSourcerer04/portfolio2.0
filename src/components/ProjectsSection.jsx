@@ -10,7 +10,15 @@ const projects = [
     demoUrl: "https://devsourcerer04.github.io/Work-in-progress/",
     githubUrl: "https://github.com/DevSourcerer04/mlproject",
   },
-  // ...other projects...
+  {
+    id: 2,
+    title: "Text Summarizer",
+    description: "An NLP based paragraph summarizer app.",
+    video: "/projects/demo1.mp4",
+    tags: ["Python", "NLP", "HTML", "JavaScript"],
+    demoUrl: "https://example.com",
+    githubUrl: "https://github.com/your-username/portfolio-website",
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -27,9 +35,9 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden flex items-center justify-center bg-black">

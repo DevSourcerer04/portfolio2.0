@@ -36,8 +36,8 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> DevSourcerer04 </span>{" "}
-            <span
+            <span className="text-glow text-foreground"> Abhishek Gupta </span>{" "}
+            {/*<span
                 id="portfolio-heading" 
                 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-blue-500 text-transparent bg-clip-text font-bold" 
                 style={{ 
@@ -47,7 +47,7 @@ export const Navbar = () => {
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
                     animation: "gradient-move 500ns linear infinite",
-            }}>Portfolio</span>
+            }}>Portfolio</span>*/}
           </span>
         </a>
 
