@@ -10,11 +10,11 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center gap-10 text-center lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:text-left">
           <div className="opacity-0 animate-fade-in-delay-1 flex justify-center lg:justify-start shrink-0">
             <div className="relative h-72 w-56 md:h-80 md:w-64 lg:h-[26rem] lg:w-[20rem] rounded-[50%/38%] overflow-hidden border-4 border-primary/70 bg-card/30 shadow-[0_0_35px_rgba(139,92,246,0.28)]">
-              <div className="absolute inset-[8px] rounded-[50%/38%] overflow-hidden border border-white/20 bg-card/20">
+              <div className="absolute inset-[5px] rounded-[50%/38%] overflow-hidden border border-primary/20 bg-background/40">
                 <img
                   src="/profile-photo.jpg"
                   alt="Portrait of Abhishek Gupta"
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full scale-110 object-cover object-[center_20%]"
                 />
               </div>
             </div>
